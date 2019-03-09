@@ -1,9 +1,13 @@
 import React from "react";
+import "./style.css";
 
 function ScoreBoard(props) {
 	return (
 		<div className="score-board">
-			<h2 className="score">Your Score: {props.score} | Max Score: 12</h2>
+			<h1 className="title">{props.children}</h1>
+			<div className="score-board">
+				<h2 className="score">Your Score: {props.score} | Max Score: 12</h2>
+			</div>
 		</div>
 	);
 }
