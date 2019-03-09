@@ -8,32 +8,47 @@ import './App.css';
 
 class App extends Component {
 	state = {
-		cards
+		cards,
+		score: 0,
+		guessed: []
 	};
 
-	guessClick = id => {
-		let cards = this.state.cards;
+	guessClick = event => {
+		// Card Array Variable
+		const cards = this.state.cards;
+		
+		// Score Variable
+		let score = this.state.score;
 
 		// Randomize Cards Array
 		for (let i = cards.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
 			[cards[i], cards[j]] = [cards[j], cards[i]]
 		}
+
+		// Increment Score
+		score++;
 		
-		// Set State to New Array
-		this.setState({ cards });
+		// Set New States
+		this.setState({ cards , score: score});
 	};
 
 	render() {
 		return ( 
 			<Wrapper>
-				<Title>Memory Game </Title>
+				<Title 
+					score={this.state.score}
+				>
+					Memory Game 
+				</Title>
 				{this.state.cards.map(card => ( 
 					<GameCard
 						guessClick={this.guessClick}
 						id={card.id}
+						key={card.id}
 						image={card.image}
 						name={card.name}
+						data-selected={card.selected}
 					/>
 				))}
 			</Wrapper>
