@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
+import GameCard from "./components/GameCard";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+import cards from "./cards.json";
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	state = {
+		cards
+	};
+
+	clickFriend = id => {
+
+	};
+
+	render() {
+		return ( 
+			<Wrapper>
+				<Title>Memory Game </Title> 
+				{this.state.cards.map(card => ( 
+					<GameCard 
+						id={card.id}
+						image={card.image}
+						name={card.name}
+					/>
+				))}
+			</Wrapper>
+		);
+	};
 }
 
 export default App;
