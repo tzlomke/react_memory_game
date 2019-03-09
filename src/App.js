@@ -11,16 +11,26 @@ class App extends Component {
 		cards
 	};
 
-	clickFriend = id => {
+	guessClick = id => {
+		let cards = this.state.cards;
+
+		// Randomize Cards Array
+		for (let i = cards.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[cards[i], cards[j]] = [cards[j], cards[i]]
+		}
 		
+		// Set State to New Array
+		this.setState({ cards });
 	};
 
 	render() {
 		return ( 
 			<Wrapper>
-				<Title>Memory Game </Title> 
+				<Title>Memory Game </Title>
 				{this.state.cards.map(card => ( 
-					<GameCard 
+					<GameCard
+						guessClick={this.guessClick}
 						id={card.id}
 						image={card.image}
 						name={card.name}
