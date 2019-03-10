@@ -55,7 +55,7 @@ class App extends Component {
 			// Changes Modal Content
 			imgSrc = "http://oohlo.com/wp-content/uploads/2018/05/vlcsnap-2018-05-24-20h16m08s593-1024x574.png";
 			imgAlt = "Loss Image";
-			modalContent = <strong>Bummer! You've attempted to fly through the ring too fast. Now you're goo.</strong>;
+			modalContent = <strong>Bummer! You attempted to fly through the ring too fast. Now you're goo.</strong>;
 
 			// Show Modal
 			show = true;
