@@ -9,11 +9,11 @@ The React Memory Game is a front-end application bootstrapped with Create React 
 ## Deployed Application
 https://tzlomke.github.io/react_memory_game/
 
-## Motivation for Development
+### Motivation for Development
 The React Memory Game represents my first application using the React Library. Development was motivated by a desire to further understand a powerful front-end JavaScript library.
 
-### React.js
+#### React.js
 https://reactjs.org/
 
-### Author
+## Author
 Taylor Zlomke | https://github.com/tzlomke/
