@@ -9,7 +9,6 @@ function Modal(props) {
 		}}>
 
 			<div className="modal-header">
-				<h3>Modal Header</h3>
 				<span className="close-modal-btn" onClick={props.close}>X</span>
 			</div>
 
@@ -21,7 +20,6 @@ function Modal(props) {
 			</div>
 
 			<div className="modal-footer">
-				{/* <button className="close-modal-btn" onClick={props.close}>CLOSE</button> */}
 			</div>
 
 		</div>

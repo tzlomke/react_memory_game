@@ -10,6 +10,11 @@
 	transition: all .8s;
 }
 
+.modal-image {
+	max-width: inherit;
+	height: auto;
+}
+
 .modal-header {
 	background: #263238;
 	height: 40px;

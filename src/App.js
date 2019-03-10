@@ -15,7 +15,7 @@ class App extends Component {
 		show: false,
 		imgSrc: "http://oohlo.com/wp-content/uploads/2018/05/vlcsnap-2018-05-24-20h16m08s593-1024x574.png",
 		imgAlt: "Loss Image",
-		modalContent: <strong>"Oh no! You've attempted to fly through the ring too fast. Now you're goo."</strong>
+		modalContent: <strong>Bummer! You've attempted to fly through the ring too fast. Now you're goo.</strong>
 	};
 
 	// Game Logic
@@ -52,9 +52,6 @@ class App extends Component {
 			// Reset Score
 			score = 0;
 
-			// Bummer!
-			console.log("bummer!");
-
 			// Show Modal
 			show = true;
 		} else {
@@ -69,9 +66,6 @@ class App extends Component {
 		if (score === 12) {
 			// Reset Score
 			score = 0;
-
-			// Congrats!
-			console.log("congratulations!");
 
 			// Win Condition Set to True
 			win = true;
