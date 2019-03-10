@@ -13,9 +13,9 @@ class App extends Component {
 		guessed: [],
 		win: false,
 		show: false,
-		imgSrc: "http://oohlo.com/wp-content/uploads/2018/05/vlcsnap-2018-05-24-20h16m08s593-1024x574.png",
-		imgAlt: "Loss Image",
-		modalContent: <strong>Bummer! You've attempted to fly through the ring too fast. Now you're goo.</strong>
+		imgSrc: null,
+		imgAlt: null,
+		modalContent: null
 	};
 
 	// Game Logic
@@ -51,6 +51,11 @@ class App extends Component {
 			
 			// Reset Score
 			score = 0;
+
+			// Changes Modal Content
+			imgSrc = "http://oohlo.com/wp-content/uploads/2018/05/vlcsnap-2018-05-24-20h16m08s593-1024x574.png";
+			imgAlt = "Loss Image";
+			modalContent = <strong>Bummer! You've attempted to fly through the ring too fast. Now you're goo.</strong>;
 
 			// Show Modal
 			show = true;
