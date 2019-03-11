@@ -1,5 +1,5 @@
 # React Memory Game
-Within the React Memory Game user's goal is to click each of 12 game cards without clicking any of them twice. Upon clicking a card, the deck is shuffled. Users are notified upon victory or failure. The game is themed upon the SyFy/Amazon series _the Expanse_. You should watch it. Before playing. A win or a loss will reveal minor **spoilers**.
+Within the React Memory Game the user's goal is to click each of 12 game cards without clicking any of them twice. Upon clicking a card, the deck is shuffled. Users are notified upon victory or failure. The game is themed upon the SyFy/Amazon series _the Expanse_. You should watch it. Before playing. A win or a loss will reveal minor **spoilers**.
 
 This application relies on a handful of stateless React components nested within a larger stateful React component.
 
